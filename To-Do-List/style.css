@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;  
+}
+body{
+    height: 100vh;
+    background: url('../img/everyday-myths-time.jpg') no-repeat center center/ cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#add-task-container{
+    width: 350px;
+    padding: 20px 10px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 3px;
+    display: flex;
+    margin-bottom: 10px;
+}
+input{
+    flex: 5;
+    margin-right: 10px; 
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 5px;
+    border: green solid 2px;
+
+}
+
+input:hover{
+    background-color: rgb(78, 159, 78);
+    color: #fff;;
+}
+input:active{
+    background-color: rgb(5, 144, 236);
+}
+
+#add-task{
+    flex: 1;
+    transition: .3s;
+    
+    font-size: 1.2rem;
+    padding: 5px;
+    
+    background-color: #fff;
+    color: green;
+    
+    border: green solid 2px;
+    border-radius: 10px;
+}
+#add-task:hover{
+    background-color: green;
+    color: #fff;
+}
+
+/* Styling for aded tasks */
+
+#task-container{
+    text-align:justify
+}
+.task{
+    width: 90%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px;
+    
+    display: flex;
+    justify-content:space-between;
+}
+.task li{
+    list-style:  none;
+    flex: 4;
+    padding: 5px;
+    font-size: 1.3rem;
+    margin: 3px;
+}
+
+.task button{
+    cursor: pointer;
+    flex: 1;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.task .checkTask{
+    color: orange;
+    margin-right: 5px;
+    border: solid 2px orange;
+    font-size: 1.5rem;
+}
+.task .checkTask:hover{
+    background-color: orange;
+    color: #fff;
+}
+
+.task .delTask{
+    color: red; 
+    border: solid 2px red;
+    font-size: 1.5rem;
+}
+.task .delTask:hover{
+    background-color: red;
+    color: #fff;
+}
